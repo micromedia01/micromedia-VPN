@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>فیلتر شکن میکرومدیا</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
@@ -24,6 +25,12 @@ tailwind.config = {
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+    .icon-circle {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
 /* ===== BASE ===== */
 html, body {
   overflow-x: hidden;
@@ -115,7 +122,8 @@ body {
     <div class="bg-white rounded-3xl p-8 max-w-md w-full mx-4 animate-slide-up shadow-2xl border">
         <div class="text-center">
             <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <span class="text-3xl">🎉</span>
+                <i class="fa-solid fa-party-horn text-3xl text-white"></i>
+
             </div>
             <h2 class="text-2xl font-bold text-gray-800 mb-4">به پنل فیلتر شکن میکرومدیا خوش آمدید!</h2>
             <p class="text-gray-600 mb-6 leading-relaxed">
@@ -134,7 +142,8 @@ body {
         <div class="text-center animate-fade-in">
             <div class="flex items-center justify-center mb-10">
                 <div class="card-glass rounded-3xl flex items-center justify-center w-24 h-24 ml-6 shadow-2xl">
-                    <span class="text-4xl text-white">🚀</span>
+                    <i class="fa-solid fa-rocket text-4xl text-white"></i>
+
                 </div>
                 <div>
                     <h1 class="text-5xl md:text-6xl font-black mb-3 text-white">VPN میکرومدیا</h1>
@@ -261,7 +270,8 @@ body {
                 <div class="card-glass rounded-2xl p-8">
                     <div class="text-center mb-6">
                         <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
-                            <span class="text-3xl text-white">⚙️</span>
+                            <i class="fa-solid fa-gear text-3xl text-white"></i>
+
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-2">کپی مستقیم کانفیگ</h3>
                         <p class="text-blue-300">لیست تمامی VPn های ما🔥</p>
@@ -276,7 +286,8 @@ body {
                 <div class="card-glass rounded-2xl p-8">
                     <div class="text-center mb-6">
                         <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
-                            <span class="text-3xl text-white">📱</span>
+                            <i class="fa-solid fa-qrcode text-3xl text-white"></i>
+
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-2">QR کد کانفیگ</h3>
                         <p class="text-purple-300">اسکن کنید و متصل شوید</p>
@@ -448,43 +459,88 @@ body {
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <!-- Problem 1 -->
-            <div class="card-glass rounded-2xl p-6 text-center">
-                <div class="w-16 h-16 bg-red-500 bg-opacity-20 text-red-400 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
-                    <i class="fa-solid fa-wifi-slash"></i>
-                </div>
+            <div class="card-glass rounded-2xl p-6 text-center relative">
+                <!-- number -->
+                <span class="absolute -top-3 -right-3 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+              
+                <div class="w-20 h-20 bg-red-500 bg-opacity-20 text-red-400 rounded-full flex items-center justify-center mx-auto mb-4 text-4xl">
+                    <i class="fa-solid fa-plug opacity-80"></i>
+                  </div>
+                  
+                
+              
                 <h3 class="text-xl font-bold text-white mb-2">وصل نمی‌شود؟</h3>
+              
                 <ul class="text-gray-300 space-y-3 text-right">
-                    <li class="flex items-start"><i class="fa-solid fa-cloud-arrow-down text-blue-400 ml-2 mt-1 w-5 text-center"></i>ابتدا لینک کانفیگ ها را آپدیت کنید.</li>
-                    <li class="flex items-start"><i class="fa-solid fa-network-wired text-yellow-400 ml-2 mt-1 w-5 text-center"></i>اتصال اینترنت خود را چک کنید.</li>
-                    <li class="flex items-start"><i class="fa-solid fa-server text-purple-400 ml-2 mt-1 w-5 text-center"></i>یک سرور دیگر را امتحان کنید.</li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-cloud-arrow-down text-blue-400 ml-2 mt-1 w-5 text-center"></i>
+                    ابتدا لینک کانفیگ‌ها را آپدیت کنید.
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-network-wired text-yellow-400 ml-2 mt-1 w-5 text-center"></i>
+                    اتصال اینترنت خود را چک کنید.
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-server text-purple-400 ml-2 mt-1 w-5 text-center"></i>
+                    یک سرور دیگر را امتحان کنید.
+                  </li>
                 </ul>
-            </div>
+              </div>
+              
              <!-- Problem 2 -->
-            <div class="card-glass rounded-2xl p-6 text-center">
+             <div class="card-glass rounded-2xl p-6 text-center relative">
+                <span class="absolute -top-3 -right-3 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+              
                 <div class="w-16 h-16 bg-orange-500 bg-opacity-20 text-orange-400 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
-                    <i class="fa-solid fa-gauge-simple-low"></i>
+                    <i class="fa-solid fa-triangle-exclamation opacity-80"></i>
+
                 </div>
+              
                 <h3 class="text-xl font-bold text-white mb-2">سرعت پایین است؟</h3>
+              
                 <ul class="text-gray-300 space-y-3 text-right">
-                    <li class="flex items-start"><i class="fa-solid fa-bolt text-yellow-400 ml-2 mt-1 w-5 text-center"></i>به بخش تست سرعت مراجعه کنید.</li>
-                    <li class="flex items-start"><i class="fa-solid fa-signal text-green-400 ml-2 mt-1 w-5 text-center"></i>به سروری با پینگ پایین‌تر متصل شوید.</li>
-                    <li class="flex items-start"><i class="fa-solid fa-window-close text-red-400 ml-2 mt-1 w-5 text-center"></i>برنامه‌های پرمصرف اینترنت را ببندید.</li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-bolt text-yellow-400 ml-2 mt-1 w-5 text-center"></i>
+                    به بخش تست سرعت مراجعه کنید.
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-signal text-green-400 ml-2 mt-1 w-5 text-center"></i>
+                    به سروری با پینگ پایین‌تر متصل شوید.
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-window-close text-red-400 ml-2 mt-1 w-5 text-center"></i>
+                    برنامه‌های پرمصرف اینترنت را ببندید.
+                  </li>
                 </ul>
-            </div>
-             <!-- Problem 3 -->
-            <div class="card-glass rounded-2xl p-6 text-center">
+              </div>
+
+              <div class="card-glass rounded-2xl p-6 text-center relative">
+                <span class="absolute -top-3 -right-3 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+              
                 <div class="w-16 h-16 bg-blue-500 bg-opacity-20 text-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
-                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <i class="fa-solid fa-globe opacity-80"></i>
+
                 </div>
+              
                 <h3 class="text-xl font-bold text-white mb-2">هنوز مشکل دارید؟</h3>
+              
                 <ul class="text-gray-300 space-y-3 text-right">
-                    <li class="flex items-start"><i class="fa-solid fa-arrow-up-from-bracket text-sky-400 ml-2 mt-1 w-5 text-center"></i>مطمئن شوید از آخرین نسخه کلاینت استفاده می‌کنید.</li>
-                    <li class="flex items-start"><i class="fa-solid fa-power-off text-red-400 ml-2 mt-1 w-5 text-center"></i>یک بار دستگاه خود را ری‌استارت کنید.</li>
-                    <li class="flex items-start"><i class="fa-solid fa-headset text-green-400 ml-2 mt-1 w-5 text-center"></i>با <a href="https://t.me/Mmbot_admin" class="text-blue-400 font-semibold">پشتیبانی</a> در ارتباط باشید.</li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-sky-400 ml-2 mt-1 w-5 text-center"></i>
+                    مطمئن شوید از آخرین نسخه کلاینت استفاده می‌کنید.
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-power-off text-red-400 ml-2 mt-1 w-5 text-center"></i>
+                    یک بار دستگاه خود را ری‌استارت کنید.
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-headset text-green-400 ml-2 mt-1 w-5 text-center"></i>
+                    با <a href="https://t.me/Mmbot_admin" class="text-blue-400 font-semibold">پشتیبانی</a> در ارتباط باشید.
+                  </li>
                 </ul>
-            </div>
-        </div>
-    </section>
+              </div>
+              
+                            
 
 </div>
 <!-- Footer -->
